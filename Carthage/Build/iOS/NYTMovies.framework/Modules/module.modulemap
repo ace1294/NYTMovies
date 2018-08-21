@@ -1,0 +1,11 @@
+framework module NYTMovies {
+  umbrella header "NYTMovies.h"
+
+  export *
+  module * { export * }
+}
+
+module NYTMovies.Swift {
+    header "NYTMovies-Swift.h"
+    requires objc
+}
