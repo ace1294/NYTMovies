@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct CriticSearchResults: Codable {
-    let status: String
-    let copyright: String
-    let numResults: Int
-    let critics: [Critic]
+public struct CriticSearchResults: Codable {
+    public let status: String
+    public let copyright: String
+    public let numResults: Int
+    public let critics: [Critic]
     
     enum CodingKeys: String, CodingKey
     {

@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct ReviewSearchResults: Codable {
-    let status: String
-    let copyright: String
-    let hasMore: Bool
-    let numResults: Int
-    let reviews: [Review]
+public struct ReviewSearchResults: Codable {
+    public let status: String
+    public let copyright: String
+    public let hasMore: Bool
+    public let numResults: Int
+    public let reviews: [Review]
     
     enum CodingKeys: String, CodingKey
     {

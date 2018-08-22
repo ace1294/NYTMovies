@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Link: Codable {
-    let type: String
-    let url: String
-    let suggestedLinkText: String
+public struct Link: Codable {
+    public let type: String
+    public let url: String
+    public let suggestedLinkText: String
     
     enum CodingKeys: String, CodingKey
     {

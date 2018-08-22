@@ -7,19 +7,18 @@
 
 import Foundation
 
-struct Review: Codable {
-    
-    let displayTitle: String
-    let mpaaRating: String
-    let criticsPick: Int
-    let byLine: String
-    let headline: String
-    let summaryShort: String
-    let publicationDate: String
-    let openingDate: String
-    let dateUpdated: String
-    let link: Link
-    let multimediua: Multimedia?
+public struct Review: Codable {
+    public let displayTitle: String
+    public let mpaaRating: String
+    public let criticsPick: Int
+    public let byLine: String
+    public let headline: String
+    public let summaryShort: String
+    public let publicationDate: String
+    public let openingDate: String?
+    public let dateUpdated: String?
+    public let link: Link
+    public let multimedia: Multimedia?
     
     enum CodingKeys: String, CodingKey
     {
@@ -33,6 +32,6 @@ struct Review: Codable {
         case openingDate = "opening_date"
         case dateUpdated = "date_updated"
         case link
-        case multimediua
+        case multimedia
     }
 }

@@ -7,9 +7,17 @@
 
 import Foundation
 
-struct Multimedia: Codable {
-    let type: String
-    let src: String
-    let width: Int
-    let height: Int
+public struct Multimedia: Codable {
+    public let type: String
+    public let src: String
+    public let width: Int
+    public let height: Int
+    public let credit: String?
+}
+
+public struct ResourceMultimedia: Codable {
+    public let multimedia: Multimedia?
+    enum CodingKeys: String, CodingKey {
+        case multimedia = "resource"
+    }
 }
